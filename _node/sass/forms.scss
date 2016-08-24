@@ -1,0 +1,67 @@
+form{
+	fieldset{
+		border-radius: 4px;
+	    margin-bottom: 10px;
+	    legend{
+			margin-left: 5px;
+		    padding: 0 10px;
+		}
+		.form-group{
+			margin-bottom: 15px;
+			input{
+				display: block;
+			}
+		}
+		.form-group-flat{
+			display: inline-block;
+		}
+		.checkbox{
+			position: relative;
+			display: block;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			input{
+				display: inline-block;
+				max-width: 100%;
+				margin-bottom: 5px;
+				font-weight: 700;
+				top: 2px;
+				position: relative;
+			}
+		}
+		.radiobox{
+			position: relative;
+			display: block;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			input{
+				display: inline-block;
+				max-width: 100%;
+				margin-bottom: 5px;
+				font-weight: 700;
+				top: 2px;
+				position: relative;
+			}
+		}
+		.file-input{
+			height: 40px;
+			overflow: hidden;
+			a{
+				cursor: pointer;
+				input{
+					position:absolute;
+					z-index:2;
+					top:0;
+					left:0;
+					filter: alpha(opacity=0);
+					-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+					opacity:0;
+					background-color:transparent;
+					color:transparent;
+				}
+			}
+		}
+	}
+}
+
+.error { background-color: $pink-ffe-bgcolor; border-color: $pink-ffa-bgcolor; color: $pink-ffb-bgcolor; box-shadow: none; }

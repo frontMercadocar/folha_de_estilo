@@ -1,0 +1,62 @@
+input{
+	display: inline-block;
+	padding: 5px;
+	border-radius: 4px;
+	background-color: $white-bgcolor;
+	background-image: none;
+	border: 1px solid $gray-ccc-bgcolor;
+	outline: none;
+}
+select{
+	display: block;
+    padding: 5px;
+    color: $gray-555-bgcolor;
+    background-color: $white-bgcolor;
+    background-image: none;
+    border: 1px solid $gray-ccc-bgcolor;
+    border-radius: 4px;
+    outline: none;
+    &:focus{
+		box-shadow: 0px 0px 5px $default-bgcolor;
+		outline: none;
+		transition: all 0.5s;
+	}
+}
+
+textarea{
+	display: block;
+	padding: 5px;
+	border-radius: 4px;
+	background-color: $white-bgcolor;
+	background-image: none;
+	border: 1px solid $gray-ccc-bgcolor;
+	outline: none;
+	resize: none;
+	&:focus{
+		box-shadow: 0px 0px 5px $default-bgcolor;
+		transition: all 0.5s;
+	}
+}
+
+input[type='email']:focus{
+	box-shadow: 0px 0px 5px $default-bgcolor;
+	outline: none;
+	transition: all 0.5s;
+}
+
+input[type='text']:focus{
+	box-shadow: 0px 0px 5px $default-bgcolor;
+	outline: none;
+	transition: all 0.5s;
+}
+
+input[type='password']:focus{
+	box-shadow: 0px 0px 5px $default-bgcolor;
+	outline: none;
+	transition: all 0.5s;
+}
+input[type='button']:focus{
+	box-shadow: none;
+	outline: none;
+	transition: all 0.5s;
+}

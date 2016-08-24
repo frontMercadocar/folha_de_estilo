@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+		<!--[if IE 7]>         <html class="no-js ie7" lang="pt-br"> <![endif]-->
+		<!--[if IE 8]>         <html class="no-js ie8" lang="pt-br"> <![endif]-->
+		<!--[if IE 9]>         <html class="no-js ie9" lang="pt-br"> <![endif]-->
+		<!--[if gt IE 10]><!--><html class="no-js" lang="pt-br"> <!--<![endif]-->
+	<head>
+			<title>Folha de Estilo</title>
+
+
+			<link rel="stylesheet" type="text/css" href="content/css/home.min.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+
+	<style type="text/css">
+
+		.box-swatch{ padding: 24px; display: inline-block; }
+		.box-swatch span{ position: relative; top: 45px; }
+
+		.box {
+				background-color: #dfc8ca;
+				padding: 6.25rem 1.25rem;
+		}
+		.box label {
+				max-width: 80%;
+				font-size: 1.25rem;
+				font-weight: 700;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				cursor: pointer;
+				display: inline-block;
+				overflow: hidden;
+				padding: 0.625rem 1.25rem;
+		}
+		.inputfile {
+				width: 0.1px;
+				height: 0.1px;
+				opacity: 0;
+				overflow: hidden;
+				position: absolute;
+				z-index: -1;
+		}
+	</style>
+
+	</head>
+
+	<body>
+		<ul class="menu" style="display: none">
+	    	<li>Tipografia
+	    		<ul>
+	    			<li><a href="#heading">heading</a></li>
+	    			<li><a href="#paragrafo">paragrafo</a></li>
+	    			<li><a href="#highlightertext">marcadortexto</a></li>
+	    			<li><a href="#deletes">delete texto</a></li>
+					<li><a href="#Underlined">Underlined text</a></li>
+					<li><a href="#small">small</a></li>
+					<li><a href="#Abbreviations">Abbreviations</a></li>
+					<li><a href="#Addresses">Addresses</a></li>
+					<li><a href="#Blockquotes">Blockquotes</a></li>
+					<li><a href="#samp">samp</a></li>
+	    		</ul>
+	    	</li>
+	    	<li>Tabelas
+	    		<ul>
+	    			<li><a href="#basictables">exemplo basico</a></li>
+	    			<li><a href="#border-hover-tables">exemplo bordar</a></li>
+	    			<li><a href="#oddtables">exemplo linhas diferentes</a></li>
+	    			<li><a href="#condensadtables">exemplo condensado</a></li>
+	    		</ul>
+	    	</li>
+	    	<li><a href="#form">Formulários</a></li>
+	    	<li><a href="#buttons">Botões</a></li>
+	    	<li><a href="#image">Imagens</a></li>
+	    	<li><a href="#icon">icon</a></li>
+	    	<li>helpers</li>
+	    	<li>Responsive</li>
+	    	<li>Nomes class/ids</li>
+	    </ul>
+
+
+		<div class="container-styles">
+
+			<h2 id="cores" class="titulos">Cores</h2>
+
+				<div class="container">
+
+					<div class="box-swatch color-darker">
+						<span>#222</span>
+					</div>
+
+					<div class="box-swatch color-dark">
+						<span>#333</span>
+					</div>
+
+					<div class="box-swatch color-gray">
+						<span>#555</span>
+					</div>
+
+					<div class="box-swatch color-light">
+						<span>#777</span>
+					</div>
+
+					<div class="box-swatch color-lighter">
+						<span>#eee</span>
+					</div>
+
+
+					<div class="box-swatch bg-primary">
+						<span>#0b4892</span>
+					</div>
+
+					<div class="box-swatch bg-success">
+						<span>#38bb4a</span>
+					</div>
+
+					<div class="box-swatch bg-info">
+						<span>#5b9ff3</span>
+					</div>
+
+					<div class="box-swatch bg-warning">
+						<span>#ff6700</span>
+					</div>
+
+					<div class="box-swatch bg-danger">
+						<span>#ff2700</span>
+					</div>
+
+				</div>
+
+			<h2 id="heading" class="titulos">heading</h2>
+
+				<div class="container">
+					
+						<h1>h1. heading</h1>
+						<h2>h2. heading</h2>
+						<h3>h3. heading</h3>
+						<h4>h4. heading</h4>
+						<h5>h5. heading</h5>
+						<h6>h6. heading</h6>
+			
+				</div>
+
+			<h2 id="paragrafo" class="titulos">paragrafo</h2>
+
+				<div class="container">
+			
+						<p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id <samp>dolor</samp> id nibh ultricies vehicula.</p>
+
+						<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+						<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+					
+				</div>
+
+			<h2 id="highlightertext" class="titulos">marcadortexto</h2>
+
+				<div class="container">				
+						<p>You can use the mark tag to <mark>highlight</mark> text.</p>			
+				</div>
+
+			<h2 id="deletes" class="titulos">deletetexto</h2>
+
+	    	<div class="container">
+	    		<p><del>This line of text is meant to be treated as deleted text.</del></p>
+	    	</div>
+
+	    	<div class="container">
+	    		<p><s>This line of text is meant to be treated as deleted text.</s></p>
+	    	</div>
+
+			<h2 id="Underlined" class="titulos">Underlined</h2>
+
+	    	<div class="container">
+	    		<p><u>This line of text is meant to be treated as deleted text.</u></p>
+	    	</div>
+
+			<h2 id="small" class="titulos">small</h2>
+
+	    	<div class="container">
+	    		<p><small>This line of text is meant to be treated as fine print.</small></p>
+	    	</div>
+
+			<h2 id="Abbreviations" class="titulos">Abbreviations</h2>
+
+	    	<div class="container">
+	    		<p><abbr title="attribute">attr</abbr></p>
+	    	</div>
+
+			<h2 id="Addresses" class="titulos">Addresses</h2>
+
+	    	<div class="container">
+	    		<address>
+						<strong>Mercadocar.</strong><br>
+						Av Nova Cantareira, 2000<br>
+						Turucuvi, São Paulo<br>
+						<abbr title="Telefone">Telefone:</abbr> (11) 2206-5000
+					</address>
+
+					<address>
+						<strong>Nome Completo</strong><br>
+						<a href="mailto:#">fnsousa@mercadocar.com.br</a>
+					</address>
+
+					<code>
+						<font color="#4183c4">Este é só um texto!</font>
+						color: #4183c4;
+					</code>
+	    	</div>
+
+			<h2 id="Blockquotes" class="titulos">Blockquotes</h2>
+
+	    	<div class="container">
+	    		<p>
+							<blockquote>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+						</blockquote>
+					</p>
+	    	</div>
+
+			<h2 id="samp" class="titulos">samp</h2>
+
+	    	<div class="container">
+	    		<p>
+	    			<samp>This text is meant to be treated as sample output from a computer program.</samp>
+				</p>
+	    	</div>
+
+			<h2 id="basictables" class="titulos">basic tables</h2>
+
+				<div class="container">
+					<table>
+						<thead>
+							<tr><th class="left aligned">Person</th>
+							<th>Calories</th>
+							<th>Fat</th>
+							<th>Protein</th>
+						</tr></thead>
+						<tbody>
+							<tr>
+								<td class="left aligned">Tasia</td>
+								<td>12</td>
+								<td>7g</td>
+								<td>21g</td>
+							</tr>
+							<tr>
+								<td class="left aligned">Ronnie</td>
+								<td>38</td>
+								<td>37g</td>
+								<td>38g</td>
+							</tr>
+							<tr>
+								<td class="left aligned">Gabriel</td>
+								<td>30</td>
+								<td>46g</td>
+								<td>46g</td>
+							</tr>
+							<tr>
+								<td class="left aligned">Logan</td>
+								<td>12</td>
+								<td>21g</td>
+								<td>39g</td>
+							</tr>
+							<tr>
+								<td class="left aligned">Clare</td>
+								<td>39</td>
+								<td>41g</td>
+								<td>2g</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			<h2 id="border-hover-tables" class="titulos">tables border hover</h2>
+				
+				<div class="container">
+					<table class="bordered table-hover">
+						<thead>
+							<tr><th class="left aligned">Person</th>
+							<th>Calories</th>
+							<th>Fat</th>
+							<th>Protein</th>
+						</tr></thead>
+						<tbody>
+							<tr>
+								<td class="left aligned">Tasia</td>
+								<td>12</td>
+								<td>7g</td>
+								<td>21g</td>
+							</tr>
+							<tr>
+								<td class="left aligned">Ronnie</td>
+								<td>38</td>
+								<td>37g</td>
+								<td>38g</td>
+							</tr>
+							<tr>
+								<td class="left aligned">Gabriel</td>
+								<td>30</td>
+								<td>46g</td>
+								<td>46g</td>
+							</tr>
+							<tr>
+								<td class="left aligned">Logan</td>
+								<td>12</td>
+								<td>21g</td>
+								<td>39g</td>
+							</tr>
+							<tr>
+								<td class="left aligned">Clare</td>
+								<td>39</td>
+								<td>41g</td>
+								<td>2g</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			<h2 id="oddtables" class="titulos">tables border</h2>
+
+				<div class="container">
+					<table class="striped">
+						<thead>
+							<tr><th class="left aligned">Person</th>
+							<th>Calories</th>
+							<th>Fat</th>
+							<th>Protein</th>
+						</tr></thead>
+						<tbody>
+							<tr>
+								<td class="left aligned">Tasia</td>
+								<td>12</td>
+								<td>7g</td>
+								<td>21g</td>
+							</tr>
+							<tr>
+								<td class="left aligned">Ronnie</td>
+								<td>38</td>
+								<td>37g</td>
+								<td>38g</td>
+							</tr>
+							<tr>
+								<td class="left aligned">Gabriel</td>
+								<td>30</td>
+								<td>46g</td>
+								<td>46g</td>
+							</tr>
+							<tr>
+								<td class="left aligned">Logan</td>
+								<td>12</td>
+								<td>21g</td>
+								<td>39g</td>
+							</tr>
+							<tr>
+								<td class="left aligned">Clare</td>
+								<td>39</td>
+								<td>41g</td>
+								<td>2g</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			<h2 id="condensadtables" class="titulos">tables condensed</h2>
+
+				<div class="container">
+					<table class="condensed">
+						<thead>
+							<tr><th class="left aligned">Person</th>
+							<th>Calories</th>
+							<th>Fat</th>
+							<th>Protein</th>
+						</tr></thead>
+						<tbody>
+							<tr>
+								<td class="left aligned">Tasia</td>
+								<td>12</td>
+								<td>7g</td>
+								<td>21g</td>
+							</tr>
+							<tr>
+								<td class="left aligned">Ronnie</td>
+								<td>38</td>
+								<td>37g</td>
+								<td>38g</td>
+							</tr>
+							<tr>
+								<td class="left aligned">Gabriel</td>
+								<td>30</td>
+								<td>46g</td>
+								<td>46g</td>
+							</tr>
+							<tr>
+								<td class="left aligned">Logan</td>
+								<td>12</td>
+								<td>21g</td>
+								<td>39g</td>
+							</tr>
+							<tr>
+								<td class="left aligned">Clare</td>
+								<td>39</td>
+								<td>41g</td>
+								<td>2g</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			<h2 id="form" class="titulos">Formuario</h2>
+
+				<div class="container">
+					<form>
+							<div class="form-group">
+								<label for="teste1">email</label>
+								<input type="email" id="teste1" placeholder="email">
+							</div>
+
+							<div class="form-group">
+								<label for="teste2">password</label>
+								<input type="password" id="teste2" placeholder="password">
+							</div>
+
+							<div class="form-group">
+								<label for="teste3">text</label>
+								<input type="text" id="teste3" placeholder="text">
+							</div>
+
+							<div class="form-group">
+								<label for="teste4">textarea</label>
+								<textarea id="teste4" placeholder="text"></textarea>
+							</div>
+
+							<div class="file-input">
+								<input type="file" id="file-3" class="inputfile" data-multiple-caption="{count} files selected" multiple="">
+								<label for="file-3" class="btn btn-default">
+									<i class="cloud upload icon"></i>
+									<span>upload</span>
+								</label>
+							</div>
+
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Check me out
+								</label>
+							</div>
+
+							<div class="radiobox">
+								<label>
+									<input type="radio"> Rádio me out
+								</label>
+							</div>
+
+							<div class="form-group">
+								<label for="teste5">select</label>
+								<select id="teste5" tabindex="7">
+								<option value="">Selecione</option>
+										<option value="0001">0001</option>
+								</select>
+							</div>
+					</form>
+
+					<form>
+						<fieldset>
+							<legend>Teste Aplicação</legend>
+
+							<div class="form-group">
+									<label for="teste6">text</label>
+									<input type="text" id="teste6" placeholder="text">
+							</div>
+							<div class="form-group">
+									<label for="teste7">text</label>
+									<input type="text" id="teste7" placeholder="text">
+							</div>
+							<div class="form-group">
+									<label for="teste8">text</label>
+									<input type="text" id="teste8" placeholder="text">
+							</div>
+						</fieldset>
+					</form>
+
+					<form>
+						<fieldset>
+							<legend>Teste Aplicação</legend>
+
+							<div class="form-group-flat">
+									<label for="teste9">text</label>
+									<input type="text" id="teste9" placeholder="text">
+							</div>
+							<div class="form-group-flat">
+									<label for="teste10">text</label>
+									<input type="text" id="teste10" placeholder="text">
+							</div>
+							<div class="form-group-flat">
+									<label for="teste11">text</label>
+									<input type="text" id="teste11" placeholder="text">
+							</div>
+						</fieldset>
+					</form>
+				</div>
+
+			<h2 id="buttons" class="titulos">Links e botões</h2>
+
+				<div class="container">
+					<a class="btn btn-default" href="#" role="button">Link</a>
+					<button class="btn btn-default" type="submit">Button</button>
+					<input class="btn btn-default" type="button" value="Input">
+					<input class="btn btn-default" type="submit" value="Submit">
+
+					<br><br>
+
+					<button class="btn btn-primary" type="button">Button</button>
+					<button class="btn btn-success" type="button">Button</button>
+					<button class="btn btn-info" type="button">Button</button>
+					<button class="btn btn-warning" type="button">Button</button>
+					<button class="btn btn-danger" type="button">Button</button>
+				</div>
+
+			<h2 id="image" class="titulos">Imagens</h2>
+
+				<div class="container">
+					<img src="content/images/no-image.png" alt="nome imagem" class="img-thumbnail" width="150" />
+					<img src="content/images/no-image.png" alt="nome imagem" class="img-rounded" width="150" />
+				</div>
+
+			<h2 id="icon" class="titulos">icons</h2>
+
+				<div class="container">
+					<div class="ui icon input loading">
+						<input placeholder="Loading..." type="text">
+						<i class="bus icon"></i>
+					</div>
+				</div>
+
+			<h2 id="helpers" class="titulos">helpers</h2>
+
+				<div class="container">
+					<div class="txt-primary font-size-large">text</div>
+					<div class="txt-success font-size-small">text</div>
+					<div class="txt-info">text</div>
+					<div class="txt-warning">text</div>
+					<div class="txt-danger">text</div>
+				</div>
+		    <!--<i>http://www.flaticon.com/</i>-->
+		    <script src="scripts/jquery.min.js"></script> <!-- v1.9.1 -->
+				<script src="scripts/mc-arredondo-pie.js"></script>
+
+		</div>
+	</body>
+</html>

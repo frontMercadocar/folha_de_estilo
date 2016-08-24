@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'newsGothic';
+  src: url("../fonts/newsGothic/News-Gothic.eot");
+  src: url('../fonts/newsGothic/News-Gothic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/newsGothic/News-Gothic.ttf')  format('truetype'),
+       url("../fonts/newsGothic/News-Gothic.woff") format('woff'),
+       url('../fonts/newsGothic/News-Gothic.svg#News-Gothic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+@font-face {
+  font-family: 'newsGothicBold';
+  src: url("../fonts/newsGothicBold/NewsGothic-BoldOblique.eot");
+  src: url('../fonts/newsGothicBold/NewsGothic-BoldOblique.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/newsGothicBold/NewsGothic-BoldOblique.ttf')  format('truetype'), 
+       url('../fonts/newsGothicBold/NewsGothic-BoldOblique.svg#NewsGothic-BoldOblique') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+
+
