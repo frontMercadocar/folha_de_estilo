@@ -1,0 +1,29 @@
+.sidebar-nav {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	z-index: 1;
+	li {
+		margin-bottom: 5px;
+		display: block;
+		a {
+			display: inline-block;
+			color: #999999;
+			width: 100%;
+			text-decoration: none;			
+			padding: 0px;
+			i{
+				padding: 7px 5px;
+				background-color: #939393;
+				width: 16px;
+				text-align: center;
+				color: white;
+			}
+		}
+		.fa-stack{
+			@include linear-gradient($white-bgcolor,$white-bgcolor);
+			color: #666;
+		}
+	}
+}

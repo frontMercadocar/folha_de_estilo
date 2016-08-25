@@ -1,0 +1,96 @@
+.main{	
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	header{
+		padding: 5px;
+		@include linear-gradient($blue-7bb-bgcolor,$green-30a-bgcolor);
+		h1{
+			margin: 0;
+			display: inline-block;
+			position: relative;
+    		top: 5px;
+			a{
+				display: inline-block;
+				background-image: url('../../content/images/logo.png');
+				width: 135px;
+				height: 38px;
+			}
+			&:hover{
+				-webkit-animation-name: logo-animation-bounce;
+				-webkit-animation-duration: 1s;
+				-webkit-transform-origin: 50% 50%;
+				-webkit-animation-iteration-count: 1;
+				-webkit-animation-timing-function: ease-in;
+			}
+		}
+		
+	}
+	section{
+		display: flex;
+		aside{
+			display: inline-block;
+			padding: 5px;
+			@include linear-gradient($white-bgcolor, $white-bgcolor);
+			min-height: 600px;
+		}		
+		.col-aside-1{
+			float: left;
+			width: 15%;
+			min-width: 180px;
+			.search-container{
+				background: #c7c7c7;
+				padding: 9px 0;
+				text-align: center;
+				position: relative;
+				margin-bottom: 1px;
+				input{
+					width: 80%;
+				}
+				i{
+					position: absolute;
+					top: 15px;
+					right: 10%;
+				}
+			}
+		}
+		.col-aside-2{
+			float: left;
+			width: 15%;
+			min-width: 180px;
+		}
+		.col-aside-3{
+			float: left;
+			width: 70%;
+		}		
+	}	
+	@include breakpoint(col-aside)  { 
+		section{
+			display: block;
+			aside{
+				width: 100% !important;
+				min-height: 60px;
+			}
+		}
+	}
+	.container{
+		width: 992px;
+		padding: 5px;
+		margin: 0 auto;
+		border: 1px solid #ccc;
+	}	
+	.container-fluid{
+		width: 80%;
+		@include breakpoint(desktop)  { width: 85%; }
+		@include breakpoint(desktop2) { width: 90%; }
+		@include breakpoint(laptop)   { width: 95%; }
+		@include breakpoint(tablet)   { width: 95%; }
+		@include breakpoint(mobile)   { width: 95%; }
+		padding: 5px;
+		margin: 0 auto;
+		border: 1px solid #ccc;
+	}
+	footer{		
+		padding: 5px;
+	}
+}

@@ -1,0 +1,46 @@
+@import 'reset';
+@import 'variables';
+@import 'botoes';
+@import 'fonts';
+@import 'forms';
+@import 'helpers';
+@import 'icons/font-awesome';
+@import 'inputs';
+@import 'placeholder';
+@import 'tabelas';
+@import 'mixin';
+@import 'menus';
+
+@import 'main';
+
+body{
+	font-family: "newsGothic", sans-serif;
+	color: inherit;
+	font-size: 14px;
+	word-spacing: normal;
+	color: $gray-555-bgcolor;
+	width: 100%;
+	margin: 0 auto;
+	.row{
+		min-height: 20px;
+		background: white;
+		margin-bottom: 5px;
+		display: inline-block;
+		position: relative;
+		width: 100%;
+		border-bottom: 1px solid #eee;
+		.pine{
+			position: absolute;
+			right: 8px;
+			top: 3px;
+		}
+		.toolbar{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			li{
+				display: inline-block;
+			}	
+		}
+	}
+}
