@@ -8,13 +8,15 @@
 @import 'inputs';
 @import 'placeholder';
 @import 'tabelas';
+@import 'texto';
 
 body{
 	font-family: "newsGothic", sans-serif;
+	font-weight: 500;
 	color: inherit;
 	font-size: 14px;
+	line-height: 1.4;
+	letter-spacing: 0.2px;
 	word-spacing: normal;
 	color: $gray-555-bgcolor;
-	width: 100%;
-	margin: 0 auto;
 }
