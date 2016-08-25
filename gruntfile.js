@@ -8,14 +8,14 @@ module.exports = function (grunt) {
                 files: ['_node/scripts/**/*.js'],
                 tasks: ['uglify'],
                 options: {
-                    livereload: 35730,
+                    livereload: 35735,
                 },
             },
             css: {
                 files: '_node/sass/{,*/}*.{scss,sass}',
                 tasks: ['sass'],
                 options: {
-                    livereload: 35730,
+                    livereload: 35735,
                 },
             },            
         },
@@ -24,7 +24,7 @@ module.exports = function (grunt) {
                 files: [{
                     dot: true,
                     src: [
-                            'content/css/home.min.css'
+                        'content/css/home.min.css'
                     ]
                 }]
             }
@@ -36,7 +36,7 @@ module.exports = function (grunt) {
                     sourceMap: false
                 },
                 files: {
-                    'content/css/home.min.css': '_node/sass/_home.scss'
+                    'content/css/home.min.css': '_node/sass/home.scss',
                 }
             }
         },
@@ -74,5 +74,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('front', ['clean', 'uglify', 'imagemin', 'sass', 'watch']);
+    grunt.registerTask('front_sass', ['clean', 'sass', 'watch']);
+    grunt.registerTask('front_js',   ['clean', 'uglify', 'watch']);
+    grunt.registerTask('front_img',  ['clean', 'imagemin', 'watch']);
 
 };

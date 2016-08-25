@@ -2,89 +2,88 @@
 		COLORS 
 *****************************/
 
-	$default-bgcolor:    #00A9F8;
+$default-bgcolor:    #00A9F8;
 
-	$white-bgcolor:      #fff;
-	$black-bgcolor:      #000;
+$white-bgcolor:      #fff;
+$black-bgcolor:      #000;
 
-	$gray-222-bgcolor:   #222;
-	$gray-333-bgcolor:   #333;
-	$gray-555-bgcolor:   #555;
-	$gray-777-bgcolor:   #777; 
-	$gray-999-bgcolor:   #999;
-	$gray-ccc-bgcolor:   #ccc;
-	$gray-ddd-bgcolor:   #ddd;
-	$gray-eee-bgcolor:   #eee;
-	$gray-ece-bgcolor:   #ece;
-	$gray-f7f-bgcolor:   #f7f7f7;
+$gray-222-bgcolor:   #222;
+$gray-333-bgcolor:   #333;
+$gray-555-bgcolor:   #555;
+$gray-777-bgcolor:   #777; 
+$gray-999-bgcolor:   #999;
+$gray-ccc-bgcolor:   #ccc;
+$gray-ddd-bgcolor:   #ddd;
+$gray-eee-bgcolor:   #eee;
+$gray-ece-bgcolor:   #ece;
+$gray-f7f-bgcolor:   #f7f7f7;
 
-	$green-38b-bgcolor:  #009541;
-	$green-30a-bgcolor:  #005C28;
-	$green-4cc-bgcolor:  #39B971;
+$green-38b-bgcolor:  #009541;
+$green-30a-bgcolor:  #005C28;
+$green-4cc-bgcolor:  #39B971;
 
-	$yellow-ffa-bgcolor: #FFB800;
+$yellow-ffa-bgcolor: #FFB800;
 
-	$blue-0f5-bgcolor:   #0075AD;
-	$blue-093-bgcolor:   #005A85;
-	$blue-3b8-bgcolor:   #0AAFFF;
-	$blue-7bb-bgcolor:   #30B9FC;
+$blue-0f5-bgcolor:   #0075AD;
+$blue-093-bgcolor:   #005A85;
+$blue-3b8-bgcolor:   #0AAFFF;
+$blue-7bb-bgcolor:   #30B9FC;
 
-	$orange-ff6-bgcolor: #FF8900;
-	$orange-dd5-bgcolor: #9B5300;
-	$orange-ff7-bgcolor: #FFB764;
+$orange-ff6-bgcolor: #FF8900;
+$orange-dd5-bgcolor: #9B5300;
+$orange-ff7-bgcolor: #FFB764;
 
-	$red-ff2-bgcolor:    #FF3500;
-	$red-d20-bgcolor:    #9B2000;
-	$red-f42-bgcolor:    #FF8464;
+$red-ff2-bgcolor:    #FF3500;
+$red-d20-bgcolor:    #9B2000;
+$red-f42-bgcolor:    #FF8464;
 
-	$pink-ffe-bgcolor:   #ffe9e5;
-	$pink-ffa-bgcolor:   #ffa899;
-	$pink-ffb-bgcolor:   #ffbeb2;
+$pink-ffe-bgcolor:   #ffe9e5;
+$pink-ffa-bgcolor:   #ffa899;
+$pink-ffb-bgcolor:   #ffbeb2;
 
 /*******************************
              
 *******************************/
-	*::selection{ background-color: $red-ff2-bgcolor; color: $white-bgcolor; }
+
+*::selection{ background-color: $red-ff2-bgcolor; color: $white-bgcolor; }
 
 /*******************************
 		BREAKPOINTS
 *******************************/
-	@mixin breakpoint($point) {
-		@if $point == desktop {
-			@media (max-width: 1600px) { @content ; }
-		}
-		@else if $point == desktop2 {
-			@media (max-width: 1200px) { @content ; }
-		}
-		@else if $point == laptop {
-			@media (max-width: 992px) { @content ; }
-		}
-		@else if $point == tablet {
-			@media (max-width: 768px) { @content ; }
-		}
-		@else if $point == mobile {
-			@media (max-width: 400px) { @content ; }
-		}
+
+@mixin breakpoint($point) {
+	@if $point == desktop {
+		@media (max-width: 1600px) { @content ; }
 	}
+	@else if $point == desktop2 {
+		@media (max-width: 1200px) { @content ; }
+	}
+	@else if $point == laptop {
+		@media (max-width: 992px) { @content ; }
+	}
+	@else if $point == col-aside {
+		@media (max-width: 900px) { @content ; }
+	}
+	@else if $point == tablet {
+		@media (max-width: 768px) { @content ; }
+	}
+	@else if $point == mobile {
+		@media (max-width: 400px) { @content ; }
+	}
+}
 
+/*******************************
+		ANIMATION
+*******************************/	
 
-
-	 
-	.container{
-		width: 992px;
+.hover-zoom{
+	transition: all .2s ease-in-out;
+	&:hover{
+		transform: scale(1.1);
+		position: absolute;
+		background: white;
 		padding: 5px;
-		margin: 0 auto;
-		border: 1px solid #ccc;
+		margin-right: -5px;
+    	margin-top: -5px;
 	}
-	
-	.container-fluid{
-		width: 80%;
-		@include breakpoint(desktop)  { width: 85%; }
-		@include breakpoint(desktop2) { width: 90%; }
-		@include breakpoint(laptop)   { width: 95%; }
-		@include breakpoint(tablet)   { width: 95%; }
-		@include breakpoint(mobile)   { width: 95%; }
-		padding: 5px;
-		margin: 0 auto;
-		border: 1px solid #ccc;
-	}
+}
