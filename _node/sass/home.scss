@@ -10,6 +10,7 @@
 @import 'tabelas';
 @import 'mixin';
 @import 'menus';
+@import "texto";
 
 @import 'main';
 
@@ -18,7 +19,7 @@ body{
 	color: inherit;
 	font-size: 14px;
 	word-spacing: normal;
-	color: $gray-555-bgcolor;
+	color: $gray-001-bgcolor;
 	width: 100%;
 	margin: 0 auto;
 	.row{
