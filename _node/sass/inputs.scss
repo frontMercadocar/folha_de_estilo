@@ -11,8 +11,7 @@ select{
 	display: block;
     padding: 5px;
     color: $gray-555-bgcolor;
-    background-color: $white-bgcolor;
-    background-image: none;
+    @include linear-gradient-2-colors($white-bgcolor, $gray-ccc-bgcolor, 30%, 100%);
     border: 1px solid $gray-ccc-bgcolor;
     border-radius: 4px;
     outline: none;

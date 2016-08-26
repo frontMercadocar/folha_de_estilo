@@ -4,26 +4,68 @@
     padding: 0;
     list-style: none;
 	z-index: 1;
+	width: 100%;
 	li {
 		margin-bottom: 5px;
 		display: block;
 		a {
 			display: inline-block;
-			color: #999999;
-			width: 100%;
-			text-decoration: none;			
+			color: #616161;
+			text-decoration: none;					
 			padding: 0px;
+			width: 100%;
+			background: rgba(238,238,238,0.6);
 			i{
 				padding: 7px 5px;
-				background-color: #939393;
+				background-color: #a7a7a7;
 				width: 16px;
 				text-align: center;
 				color: white;
 			}
+			&:hover{
+				background: #12b5f8;
+				color: white;
+			}			
 		}
-		.fa-stack{
-			@include linear-gradient($white-bgcolor,$white-bgcolor);
-			color: #666;
+		.active{
+			background: #12b5f8 !important;
+			color: white !important;
+		}
+		.fa-circle{
+			color: #a7a7a7;
+			position: absolute;
+			margin-left: -18px;
+			margin-top: 3px;
+			font-size: 10px;
+		}
+		.fa-minus-square, .fa-plus-square{
+			color: #12b5f8;
+			position: absolute;
+			margin-left: -18px;
+			margin-top: 3px;
+			font-size: 10px;
+		}
+		.fa-exclamation-triangle{
+			color: #12b5f8;
+			position: absolute;
+			margin-left: -18px;
+			margin-top: 3px;
+			font-size: 10px;
+		}
+		.vermelho{
+			color: $red-ff2-bgcolor;
+		}
+		.main-stack{
+			@include linear-gradient-3-colors($gray-ccc-bgcolor,$white-bgcolor,$gray-ccc-bgcolor, 0%, 50%, 100%);
+			color: #12b5f8;
+			font-weight: 600;
+			margin-bottom: 5px;
+			width: 100%;
+		}
+		ul{
+			margin-top: 5px;
+			padding: 2px 21px;
+			width: calc(100% - 21px);
 		}
 	}
 }

@@ -1,5 +1,6 @@
 @import 'reset';
 @import 'variables';
+@import 'mixin';
 @import 'botoes';
 @import 'fonts';
 @import 'forms';
@@ -8,7 +9,7 @@
 @import 'inputs';
 @import 'placeholder';
 @import 'tabelas';
-@import 'mixin';
+
 @import 'menus';
 
 @import 'main';
@@ -16,7 +17,7 @@
 body{
 	font-family: "newsGothic", sans-serif;
 	color: inherit;
-	font-size: 14px;
+	font-size: 0.75vw;	
 	word-spacing: normal;
 	color: $gray-555-bgcolor;
 	width: 100%;
@@ -41,6 +42,77 @@ body{
 			li{
 				display: inline-block;
 			}	
+		}		
+	}
+	.board{
+		text-align: center;
+		@include linear-gradient-3-colors($gray-ccc-bgcolor,$white-bgcolor,$gray-ccc-bgcolor, 20%, 70%, 126%);
+		box-shadow: 0px 2px 0px #c7c7c7;
+		margin-bottom: 20px;
+	}
+	.label-100{
+		padding: 8px 0;
+		display: block;
+		select{
+			margin-top: 8px;
+			min-width: 100%;
+		}
+	}
+	fieldset{
+		border: 1px solid #ccc;
+		box-shadow: inset 1px 0px 10px #ccc;
+		padding: 5px;
+		border-radius: 8px;
+		position: relative;
+		.txt-title{
+			margin-bottom: 30px;
+		}
+		.btn-auditoria{
+			position: absolute;
+			top: 2%;
+			right: 5px;
+		}
+		.btn-add{
+			width: 110px;
+		}
+		label{
+			width: 100%;
+			display: inline-block;
+		}
+		.calc-100-95{
+			width: calc(100% - 95px);
+			input{
+				width: 98%;
+			}			
+		}
+		.width-90{
+			width: 90px;
+			input{
+				width: calc(100% - 12px);
+			}
+		}
+		.calc-100-115	{
+			width: calc(100% - 115px);
+			select{
+				width: 98%;
+			}			
+		}
+		.width-110{
+			width: 110px;
+		}
+		table{
+			box-shadow: inset 1px 0px 10px #ccc;
+			overflow: hidden;
+			border-radius: 8px;	
+		}
+	}
+	.group-buttons{
+		text-align: right;
+		margin-top: 19px;
+		margin-right: 4px;
+		i{
+			position: relative;
+			left: -5px;
 		}
 	}
 }

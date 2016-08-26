@@ -1,9 +1,14 @@
-@mixin linear-gradient($value1,$value2) {
+@mixin linear-gradient-2-colors($value1,$value2,$porcent1,$porcent2) {
 	background: $value1;
-	background: -moz-linear-gradient(top,  $value1 0%,$value2 100%);
-	background: -webkit-linear-gradient(top,  $value1 0%,$value2 100%);
-	background: linear-gradient(to bottom, $value1 0%, $value2 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$value1', endColorstr='$value2',GradientType=0 );
+	background: -moz-linear-gradient(top,  $value1 $porcent1,$value2 $porcent2);
+	background: -webkit-linear-gradient(top,  $value1 $porcent1,$value2 $porcent2);
+	background: linear-gradient(to bottom, $value1 $porcent1, $value2 $porcent2);
+}
+@mixin linear-gradient-3-colors($value1,$value2,$value3,$porcent1,$porcent2,$porcent3) {
+	background: $value1;
+	background: -moz-linear-gradient(top,  $value1 $porcent1, $value2 $porcent2, $value3 $porcent3);
+	background: -webkit-linear-gradient(top,  $value1 $porcent1, $value2 $porcent2, $value3 $porcent3);
+	background: linear-gradient(to bottom,  $value1 $porcent1, $value2 $porcent2, $value3 $porcent3);
 }
 
 @-webkit-keyframes logo-animation-bounce{
@@ -18,3 +23,4 @@
 	80% { -webkit-transform: translate(0px, 0px) }
 	100% { -webkit-transform: translate(0px, 0px) }  
 }
+

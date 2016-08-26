@@ -17,24 +17,23 @@
 			<header>
 				<h1>
 					<a href="#"></a>
-				</h1>
+				</h1>				
 			</header>
 
 			<section>
 				<aside class="col-aside-1">
 					<div class="row">
-						<a href="" class="fa fa-bars hover-zoom pine"></a>
-					
+						<a href="" class="fa fa-bars hover-zoom pine"></a>					
 					</div>
 					<div class="row">				
 						<ul class="sidebar-nav">
-							<li><a href="" class="fa-stack">
-								<i class="fa fa-eye"></i> Maias Acessadas</a>
+							<li><a href="" class="main-stack">
+								<i class="fa fa-eye"></i> Mais Acessadas</a>
 								<ul>
-									<li><a href="#">Administração de sistema</a></li>
-									<li><a href="#">Cadastro de fabricante</a></li>
-									<li><a href="#">Cotação fornecedor</a></li>
-									<li><a href="#">Cadstro de departamento</a></li>
+									<li><i class="fa fa-circle vermelho"></i><a href="#">Administração de sistema</a></li>
+									<li><i class="fa fa-circle"></i><a href="#">Cadastro de fabricante</a></li>
+									<li><i class="fa fa-circle"></i><a href="#">Cotação fornecedor</a></li>
+									<li><i class="fa fa-circle"></i><a href="#">Cadstro de departamento</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -45,22 +44,28 @@
 						</div>
 
 						<ul class="sidebar-nav">
-							<li ><a href="" class="fa-stack"><i class="fa fa-users"></i> Administração de sistema</a>
+							<li ><a href="" class="main-stack active">
+								<i class="fa fa-users"></i> Administração de sistema</a>
 								<ul>
-									<li><a href="#">Atualização</a>
+									<li><i class="fa fa-minus-square"></i><a href="#">Atualização</a>
 										<ul>
-											<li><a href="#">Cadastro de ações</a></li>
-											<li><a href="#">Consultas</a></li>
+											<li><i class="fa fa-plus-square"></i><a href="#">Cadastro de ações</a></li>
+											<li><i class="fa fa-minus-square"></i><a href="#">Consultas</a>
+												<ul>
+													<li><a href="#">Cadastro de ações</a></li>
+													<li><i class="fa fa-exclamation-triangle"></i><a href="#">Consulta de fabricantes</a></li>
+												</ul>
+											</li>
 										</ul>
 									</li>
-									<li><a href="#">Cadastro</a></li>
-									<li><a href="#">Gerencia</a></li>
+									<li><i class="fa fa-plus-square"></i><a href="#">Cadastro</a></li>
+									<li><i class="fa fa-plus-square"></i><a href="#">Gerencia</a></li>
 								</ul>
 							</li>
-							<li><a href="" class="fa-stack"><i class="fa fa-file"></i> Cadastro</a></li>
-							<li><a href="" class="fa-stack"><i class="fa fa-usd"></i> Caixa</a></li>
-							<li><a href="" class="fa-stack"><i class="fa fa-shopping-cart"></i> Compras</a></li>
-							<li><a href="" class="fa-stack"><i class="fa fa-building"></i> Entreposto</a></li>
+							<li><a href="" class="main-stack"><i class="fa fa-file"></i> Cadastro</a></li>
+							<li><a href="" class="main-stack"><i class="fa fa-usd"></i> Caixa</a></li>
+							<li><a href="" class="main-stack"><i class="fa fa-shopping-cart"></i> Compras</a></li>
+							<li><a href="" class="main-stack"><i class="fa fa-building"></i> Entreposto</a></li>
 						</ul>
 						<!--<ul>
 							<li>Administração de sistema</li>
@@ -69,10 +74,131 @@
 							<li>Cadastro de departamento</li>
 						</ul>-->
 					</div>
+
 					<div class="row"></div>
 				</aside>
-				<aside class="col-aside-2">2</aside>
-				<aside class="col-aside-3">3</aside>
+				
+				<aside class="col-aside-2">
+					<div class="row board">
+						<h4>Hierarquia de Funções</h4>				
+					</div>
+
+					<label class="label-100">
+						Departamento
+						<select>
+							<option>Todos</option>
+						</select>
+					</label>
+
+					<label class="label-100">
+						Cargo
+						<select>
+							<option>Todos</option>
+						</select>
+					</label>
+
+					<label class="label-100">
+						Funcionário
+						<select>
+							<option>Selecione</option>
+						</select>
+					</label>
+
+					<button class="btn btn-success">Carregar dados (*)</button>
+				</aside>
+
+				<aside class="col-aside-3">
+					<h5>Geral</h5>		
+					<fieldset>
+						<p class="txt-title">Código:<strong>4</strong></p>
+						
+						<button class="btn btn-primary btn-auditoria">Auditoria</button>
+						
+						<label class="calc-100-95">
+							Descrição:
+							<input type="text" placeholder="Gerente Departamento">
+						</label>
+
+						<label class="width-90">
+							CBO:
+							<input type="text" placeholder="0000004">
+						</label>
+
+						<label class="calc-100-115">
+							Departamento:							
+							<select>
+								<option>
+									Selecione
+								</option>
+							</select>							
+						</label>
+
+						<label class="width-110">
+							<button class="btn btn-success btn-add">
+								<i class="fa fa-plus-circle "></i>
+								Adicionar
+							</button>
+						</label>
+
+						<table class="striped condensed">
+							<thead>
+								<tr>
+									<th>Departamento</th>
+									<th>Gestor</th>
+									<th>Excluir</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>T.I</td>
+									<td><input type="checkbox"></td>
+									<td><i class="fa fa-times-circle"></i></td>
+								</tr>
+							</tbody>
+						</table>
+
+					</fieldset>
+
+					<h5>Funcionário</h5>		
+					<fieldset>
+
+						<table  class="striped condensed">
+							<thead>
+								<tr>
+									<th>
+										<select>
+											<option>Selecione</option>
+										</select>
+									</th>
+									<th>
+										<select>
+											<option>Selecione</option>
+										</select>
+									</th>
+									<th>
+										<select>
+											<option>Selecione</option>
+										</select>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>José da Silva Maria</td>
+									<td>T.I</td>
+									<td>Tucuruvi</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</fieldset>
+
+					<div class="group-buttons">
+						<button class="btn btn-default"><i class="fa fa-question-circle"></i>Ajudar</button>
+						<button class="btn btn-success"><i class="fa fa-check-circle"></i>Salvar</button>
+						<button class="btn btn-danger"><i class="fa fa-times-circle"></i>Fechar</button>
+					</div>
+				</aside>
 			</section>
 
 			<footer></footer>
