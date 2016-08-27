@@ -6,7 +6,7 @@
     font-weight: 400;
     line-height: 1.42857143;
     text-align: center;
-    $white-bgcolor-space: nowrap;
+    $white-bgcolor: nowrap;
     vertical-align: middle;
     -ms-touch-action: manipulation;
     touch-action: manipulation;
@@ -22,17 +22,17 @@
 
 .btn-default {
     color: $gray-002-bgcolor;
-    background-color: $gray-f7f-bgcolor;
+    background-color: $gray-001-bgcolor;
     transition: all 0.5s;
-    border-color: $gray-ccc-bgcolor;
+    border-color: $gray-001-bgcolor;
     outline: none;
     &:hover {
-		border: 1px solid $gray-999-bgcolor;
-		background-color: $gray-eee-bgcolor;
+		border: 1px solid $gray-003-bgcolor;
+		background-color: $gray-003-bgcolor;
 	}
 	&:active {
 		padding: 4px 10px;
-		border: 1px solid $gray-999-bgcolor;
+		border: 1px solid $gray-001-bgcolor;
 		background-color: $white-bgcolor;
 	}
 }
@@ -41,30 +41,30 @@
     color: $white-bgcolor;
     background-color: $default-bgcolor;
     transition: all 0.1s;
-    border-color: $gray-ccc-bgcolor;
+    border-color: $gray-001-bgcolor;
     outline: none;
     &:hover {
-		border: 1px solid $gray-999-bgcolor;
-		background-color: $blue-003-bgcolor;
+		border: 1px solid $gray-001-bgcolor;
+		background-color: $blue-001-bgcolor;
 	}
 	&:active {
-		border: 1px solid $gray-999-bgcolor;
-		background-color: $blue-002-bgcolor;
+		border: 1px solid $gray-001-bgcolor;
+		background-color: $blue-001-bgcolor;
 	}
 }
 
 .btn-success {
     color: $white-bgcolor;
-    background-color: $green-002-bgcolor;
+    background-color: $green-001-bgcolor;
     transition: all 0.1s;
-    border-color: $gray-ccc-bgcolor;
+    border-color: $gray-001-bgcolor;
     outline: none;
     &:hover {
-		border: 1px solid $gray-999-bgcolor;
+		border: 1px solid $gray-001-bgcolor;
 		background-color: $green-003-bgcolor;
 	}
 	&:active {
-		border: 1px solid $gray-999-bgcolor;
+		border: 1px solid $gray-001-bgcolor;
 		background-color: $green-001-bgcolor;
 	}
 }
@@ -73,14 +73,14 @@
     color: $white-bgcolor;
     background-color: $blue-002-bgcolor;
     transition: all 0.1s;
-    border-color: $gray-ccc-bgcolor;
+    border-color: $gray-001-bgcolor;
     outline: none;
     &:hover {
-		border: 1px solid $gray-999-bgcolor;
-		background-color: $blue-3b8-bgcolor;
+		border: 1px solid $gray-001-bgcolor;
+		background-color: $blue-001-bgcolor;
 	}
 	&:active {
-		border: 1px solid $gray-999-bgcolor;
+		border: 1px solid $gray-001-bgcolor;
 		background-color: $blue-001-bgcolor;
 	}
 }
@@ -89,14 +89,14 @@
     color: $white-bgcolor;
     background-color: $orange-002-bgcolor;
     transition: all 0.1s;
-    border-color: $gray-ccc-bgcolor;
+    border-color: $gray-001-bgcolor;
     outline: none;
     &:hover {
-		border: 1px solid $gray-999-bgcolor;
+		border: 1px solid $gray-001-bgcolor;
 		background-color: $orange-003-bgcolor;
 	}
 	&:active {
-		border: 1px solid $gray-999-bgcolor;
+		border: 1px solid $gray-001-bgcolor;
 		background-color: $orange-001-bgcolor;
 	}
 }
@@ -105,14 +105,14 @@
     color: $white-bgcolor;
     background-color: $red-002-bgcolor;
     transition: all 0.1s;
-    border-color: $gray-ccc-bgcolor;
+    border-color: $gray-001-bgcolor;
     outline: none;
     &:hover {
-		border: 1px solid $gray-999-bgcolor;
+		border: 1px solid $gray-001-bgcolor;
 		background-color: $red-003-bgcolor;
 	}
 	&:active {
-		border: 1px solid $gray-999-bgcolor;
+		border: 1px solid $gray-001-bgcolor;
 		background-color: $red-001-bgcolor;
 	}
 }
