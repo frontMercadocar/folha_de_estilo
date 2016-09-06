@@ -10,54 +10,54 @@
 		display: block;
 		a {
 			display: inline-block;
-			color: #616161;
+			color: $gray-004-bgcolor;
 			text-decoration: none;					
 			padding: 0px;
 			width: 100%;
-			background: rgba(238,238,238,0.6);
+			background: $gray-000-bgcolor;
 			i{
 				padding: 7px 5px;
-				background-color: #a7a7a7;
+				background-color: $gray-002-bgcolor;
 				width: 16px;
 				text-align: center;
-				color: white;
+				color: $white-bgcolor;
 			}
 			&:hover{
-				background: #12b5f8;
-				color: white;
+				background: $blue-001-bgcolor;
+				color: $white-bgcolor;
 			}			
 		}
 		.active{
-			background: #12b5f8 !important;
-			color: white !important;
+			background: $blue-001-bgcolor !important;
+			color: $white-bgcolor !important;
 		}
 		.fa-circle{
-			color: #a7a7a7;
+			color: $gray-006-bgcolor;
 			position: absolute;
 			margin-left: -18px;
 			margin-top: 3px;
 			font-size: 10px;
-		}
+		}		
 		.fa-minus-square, .fa-plus-square{
-			color: #12b5f8;
+			color: $blue-001-bgcolor;
 			position: absolute;
 			margin-left: -18px;
 			margin-top: 3px;
 			font-size: 10px;
 		}
 		.fa-exclamation-triangle{
-			color: #12b5f8;
+			color: $orange-002-bgcolor;
 			position: absolute;
 			margin-left: -18px;
 			margin-top: 3px;
 			font-size: 10px;
 		}
 		.vermelho{
-			color: $red-ff2-bgcolor;
+			color: $red-001-bgcolor;
 		}
 		.main-stack{
-			@include linear-gradient-3-colors($gray-ccc-bgcolor,$white-bgcolor,$gray-ccc-bgcolor, 0%, 50%, 100%);
-			color: #12b5f8;
+			@include linear-gradient-3-colors($gray-006-bgcolor,$white-bgcolor,$gray-006-bgcolor, 0%, 50%, 100%);
+			color: $blue-001-bgcolor;
 			font-weight: 600;
 			margin-bottom: 5px;
 			width: 100%;

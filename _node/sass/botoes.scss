@@ -6,7 +6,7 @@
     font-weight: 400;
     line-height: 1.42857143;
     text-align: center;
-    $white-bgcolor-space: nowrap;
+    $white-bgcolor: nowrap;
     vertical-align: middle;
     -ms-touch-action: manipulation;
     touch-action: manipulation;
@@ -21,18 +21,18 @@
 }
 
 .btn-default {
-    color: $gray-333-bgcolor;
-    background-color: $gray-f7f-bgcolor;
+    color: $gray-003-bgcolor;
+    background-color: $gray-000-bgcolor;
     transition: all 0.5s;
-    border-color: $gray-ccc-bgcolor;
+    border-color: $gray-006-bgcolor;
     outline: none;
     &:hover {
-		border: 1px solid $gray-999-bgcolor;
-		background-color: $gray-eee-bgcolor;
+		border: 1px solid $gray-003-bgcolor;
+		background-color: $gray-004-bgcolor;
 	}
 	&:active {
 		padding: 4px 10px;
-		border: 1px solid $gray-999-bgcolor;
+		border: 1px solid $gray-003-bgcolor;
 		background-color: $white-bgcolor;
 	}
 }
@@ -41,78 +41,78 @@
     color: $white-bgcolor;
     background-color: $default-bgcolor;
     transition: all 0.1s;
-    border-color: $gray-ccc-bgcolor;
+    border-color: $gray-006-bgcolor;
     outline: none;
     &:hover {
-		border: 1px solid $gray-999-bgcolor;
-		background-color: $blue-093-bgcolor;
+		border: 1px solid $gray-003-bgcolor;
+		background-color: $blue-002-bgcolor;
 	}
 	&:active {
-		border: 1px solid $gray-999-bgcolor;
-		background-color: $blue-0f5-bgcolor;
+		border: 1px solid $gray-003-bgcolor;
+		background-color: $blue-002-bgcolor;
 	}
 }
 
 .btn-success {
     color: $white-bgcolor;
-    background-color: $green-38b-bgcolor;
+    background-color: $green-002-bgcolor;
     transition: all 0.1s;
-    border-color: $gray-ccc-bgcolor;
+    border-color: $gray-006-bgcolor;
     outline: none;
     &:hover {
-		border: 1px solid $gray-999-bgcolor;
-		background-color: $green-30a-bgcolor;
+		border: 1px solid $gray-003-bgcolor;
+		background-color: $green-003-bgcolor;
 	}
 	&:active {
-		border: 1px solid $gray-999-bgcolor;
-		background-color: $green-4cc-bgcolor;
+		border: 1px solid $gray-004-bgcolor;
+		background-color: $green-002-bgcolor;
 	}
 }
 
 .btn-info {
     color: $white-bgcolor;
-    background-color: $blue-0f5-bgcolor;
+    background-color: $blue-002-bgcolor;
     transition: all 0.1s;
-    border-color: $gray-ccc-bgcolor;
+    border-color: $gray-006-bgcolor;
     outline: none;
     &:hover {
-		border: 1px solid $gray-999-bgcolor;
-		background-color: $blue-3b8-bgcolor;
+		border: 1px solid $gray-004-bgcolor;
+		background-color: $blue-001-bgcolor;
 	}
 	&:active {
-		border: 1px solid $gray-999-bgcolor;
-		background-color: $blue-7bb-bgcolor;
+		border: 1px solid $gray-004-bgcolor;
+		background-color: $blue-001-bgcolor;
 	}
 }
-
+ 
 .btn-warning {
     color: $white-bgcolor;
-    background-color: $orange-ff6-bgcolor;
+    background-color: $orange-003-bgcolor;
     transition: all 0.1s;
-    border-color: $gray-ccc-bgcolor;
+    border-color: $gray-006-bgcolor;
     outline: none;
     &:hover {
-		border: 1px solid $gray-999-bgcolor;
-		background-color: $orange-dd5-bgcolor;
+		border: 1px solid $gray-003-bgcolor;
+		background-color: $orange-002-bgcolor;
 	}
 	&:active {
-		border: 1px solid $gray-999-bgcolor;
-		background-color: $orange-ff7-bgcolor;
+		border: 1px solid $gray-004-bgcolor;
+		background-color: $orange-003-bgcolor;
 	}
 }
 
 .btn-danger {
     color: $white-bgcolor;
-    background-color: $red-ff2-bgcolor;
+    background-color: $red-002-bgcolor;
     transition: all 0.1s;
-    border-color: $gray-ccc-bgcolor;
+    border-color: $gray-006-bgcolor;
     outline: none;
     &:hover {
-		border: 1px solid $gray-999-bgcolor;
-		background-color: $red-d20-bgcolor;
+		border: 1px solid $gray-003-bgcolor;
+		background-color: $red-003-bgcolor;
 	}
 	&:active {
-		border: 1px solid $gray-999-bgcolor;
-		background-color: $red-f42-bgcolor;
+		border: 1px solid $gray-004-bgcolor;
+		background-color: $red-001-bgcolor;
 	}
 }

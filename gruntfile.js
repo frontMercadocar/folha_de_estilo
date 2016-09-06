@@ -32,7 +32,7 @@ module.exports = function (grunt) {
         sass: {
             default: {
                 options: {
-                    style: 'compressed',
+                    style: 'compact',
                     sourceMap: false
                 },
                 files: {

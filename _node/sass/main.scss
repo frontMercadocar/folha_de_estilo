@@ -4,14 +4,16 @@
 	display: inline-block;
 	position: absolute;
 	height: calc(100% - 67px);
+	@include linear-gradient-2-colors($default-bgcolor,$default-bgcolor, 0%, 100%);
 	header{
 		padding: 5px;
-		@include linear-gradient-2-colors($blue-093-bgcolor,$default-bgcolor, 0%, 100%);
+		position: relative;		
 		h1{
 			margin: 0;
 			display: inline-block;
 			position: relative;
-    		top: 5px;
+    		top: -5px;
+    		left: 35px;
 			a{
 				display: inline-block;
 				background-image: url('../../content/images/logo.png');
@@ -26,30 +28,50 @@
 				-webkit-animation-timing-function: ease-in;
 			}
 		}
+		.sub-header{
+			position: absolute;
+			padding: 5px 0;
+			width: 81%;
+			right: 1%;
+			display: block;
+			top: 8px;
+			color: white;
+			text-align: right;
+		}
 		
 	}
 	section{
 		display: flex;
 		height: 100%;
+		position: relative;
 		aside{
 			display: inline-block;
 			padding: 5px;
-			@include linear-gradient-2-colors($gray-ccc-bgcolor, $white-bgcolor, 0%, 10%);
-			min-height: 600px;
+			@include linear-gradient-2-colors($gray-006-bgcolor, $white-bgcolor, 0%, 10%);
 			h5 {
 				font-size: 14px;
 				padding: 0;
 				margin: 6px 18px;
-				color: #12b5f8;
+				color: $blue-001-bgcolor;
 			}
 		}		
-		.col-aside-1{
+		.row-aside-1{
 			float: left;
-			width: 15%;
-			min-width: 180px;
-			background: red;
+			max-width: 210px;
+			position: relative;
+			z-index: 3;
+			//@include shadow-aside(-9px,-10px,24px,$gray-005-bgcolor);
+			section{
+				display: inline-flex;
+				height: 100%;
+				position: inherit;
+				top: inherit;
+			}
+			.container-scroll{
+				right: -3px;
+			}
 			.search-container{
-				background: #d2d5d4;
+				background: $gray-002-bgcolor;
 				padding: 9px 0;
 				text-align: center;
 				position: relative;
@@ -64,22 +86,86 @@
 				}
 			}
 		}
-		.col-aside-2{
+		.row-aside-2{
 			float: left;
-			width: 15%;
-			min-width: 180px;
+			width: calc(100% - 32px);
+			position: relative;
+			z-index: 2;
+			margin-left: -1px;
+    		padding-left: 6px;
+			//@include shadow-aside(-9px,-10px,24px,$gray-005-bgcolor);
+			.section-1{
+				display: inline-flex;
+				height: 100%;
+				position: inherit;
+				top: inherit;
+				max-width: 210px;
+			}
+			.section-2{
+				top: inherit;
+				display: inline-flex;
+				height: 100%;
+				position: inherit;
+				vertical-align: top;
+				width: calc(100% - 210px);
+			}
+			.container-scroll{
+				right: -3px;
+			}
 		}
-		.col-aside-3{
+		.row-aside-3{
 			float: left;
-			width: 70%;
+			width: 100% !important;
+			position: relative;
+			z-index: 1;
+			//@include shadow-aside(-12px,-10px,24px,$gray-005-bgcolor);
 		}		
+		.aside-closed{
+			width: 0 !important;
+			min-width: 22px;
+			padding: 0;
+			&:before{
+				content: '';
+				position: absolute;
+				height: 100%;
+				width: 25px;
+				background: $gray-001-bgcolor;
+				z-index: 2;
+				top: 0;
+			}
+			.scroll{
+				padding-right: 0px !important;
+			}
+			.row-1{
+				z-index: 3;
+				background: $default-bgcolor;
+				top: 6px;
+			}
+			.row-2{
+				margin-left: 2px;							
+			}
+			.close-pine-2{
+				left: 8px;
+				top: -6px;
+			}	
+		}
 	}	
 	@include breakpoint(col-aside)  { 
 		section{
 			display: block;
+			width: 100%;
 			aside{
-				width: 100% !important;
+				max-width: none !important;
+				width: calc(100% - 10px) !important;
 				min-height: 60px;
+			}
+			.row-aside-2{
+				.section-1{
+				    max-width: none;	
+				}
+				.section-2{
+					width: calc(100% - 0px);
+				}
 			}
 		}
 	}
@@ -87,7 +173,7 @@
 		width: 992px;
 		padding: 5px;
 		margin: 0 auto;
-		border: 1px solid #ccc;
+		border: 1px solid $gray-000-bgcolor;
 	}	
 	.container-fluid{
 		width: 80%;
@@ -98,9 +184,28 @@
 		@include breakpoint(mobile)   { width: 95%; }
 		padding: 5px;
 		margin: 0 auto;
-		border: 1px solid #ccc;
-	}
+		border: 1px solid $gray-000-bgcolor;
+	}	
 	footer{		
 		padding: 5px;
 	}
+	
+}
+
+
+.scroll{
+	height: 100%;
+	width: 99.5% !important;
+}
+.container-scroll{
+	left: inherit !important;
+	right: 0;
+}
+.vertical-track {
+	width: 7px;                  /* The width of the scrollbar */
+	background-color: #a7a7a7;   /* The color of the scrollbar track*/
+}
+.vertical-handle {
+	width: 100%;
+	background-color: #dfdfdf;   /* The color of the scrollbar handle */
 }

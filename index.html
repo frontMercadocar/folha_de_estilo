@@ -10,201 +10,369 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="UTF-8">
+
+
 	</head>
 
-	<body>	
+	<body>
+
+		<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h3 id="myModalLabel">Modal header</h3>
+			</div>
+			<div class="modal-body">
+				<p>One fine body…</p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+				<button class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+
 		<div class="main">
 			<header>
-				<h1>
+				<h1>			
 					<a href="#"></a>
-				</h1>				
+				</h1>
+
+				<div class="sub-header">
+					SP01PC285 V3.001 | Barra Funda | <strong>Felipe Lima</strong>
+				</div>				
 			</header>
 
 			<section>
-				<aside class="col-aside-1">
-					<div class="row">
-						<a href="" class="fa fa-bars hover-zoom pine"></a>					
-					</div>
-					<div class="row">				
-						<ul class="sidebar-nav">
-							<li><a href="" class="main-stack">
-								<i class="fa fa-eye"></i> Mais Acessadas</a>
-								<ul>
-									<li><i class="fa fa-circle vermelho"></i><a href="#">Administração de sistema</a></li>
-									<li><i class="fa fa-circle"></i><a href="#">Cadastro de fabricante</a></li>
-									<li><i class="fa fa-circle"></i><a href="#">Cotação fornecedor</a></li>
-									<li><i class="fa fa-circle"></i><a href="#">Cadstro de departamento</a></li>
-								</ul>
-							</li>
-						</ul>
+				<aside class="row-aside-1">
+					<section id="col_1">
+						<div class="scroll">
+							<div class="col row-1">
+								<a href="javascript:;" class="fa fa-bars pine"  onclick="click_aside('1')"></a>
+							</div>
 
-						<div class="search-container">
-							<input type="text" >
-							<i class="fa fa-search"></i>
-						</div>
-
-						<ul class="sidebar-nav">
-							<li ><a href="" class="main-stack active">
-								<i class="fa fa-users"></i> Administração de sistema</a>
-								<ul>
-									<li><i class="fa fa-minus-square"></i><a href="#">Atualização</a>
+							<div class="col">										
+								<ul class="sidebar-nav">
+									<li><a href="" class="main-stack">
+										<i class="fa fa-eye"></i> Mais Acessadas</a>
 										<ul>
-											<li><i class="fa fa-plus-square"></i><a href="#">Cadastro de ações</a></li>
-											<li><i class="fa fa-minus-square"></i><a href="#">Consultas</a>
-												<ul>
-													<li><a href="#">Cadastro de ações</a></li>
-													<li><i class="fa fa-exclamation-triangle"></i><a href="#">Consulta de fabricantes</a></li>
-												</ul>
-											</li>
+											<li><i class="fa fa-circle vermelho"></i><a href="#">Administração de sistema</a></li>
+											<li><i class="fa fa-circle"></i><a href="#">Cadastro de fabricante</a></li>
+											<li><i class="fa fa-circle"></i><a href="#">Cotação fornecedor</a></li>
+											<li><i class="fa fa-circle"></i><a href="#">Cadstro de departamento</a></li>
 										</ul>
 									</li>
-									<li><i class="fa fa-plus-square"></i><a href="#">Cadastro</a></li>
-									<li><i class="fa fa-plus-square"></i><a href="#">Gerencia</a></li>
 								</ul>
-							</li>
-							<li><a href="" class="main-stack"><i class="fa fa-file"></i> Cadastro</a></li>
-							<li><a href="" class="main-stack"><i class="fa fa-usd"></i> Caixa</a></li>
-							<li><a href="" class="main-stack"><i class="fa fa-shopping-cart"></i> Compras</a></li>
-							<li><a href="" class="main-stack"><i class="fa fa-building"></i> Entreposto</a></li>
-						</ul>
-						<!--<ul>
-							<li>Administração de sistema</li>
-							<li>Cadastro de fabricante</li>
-							<li>Cotação fornecedor</li>
-							<li>Cadastro de departamento</li>
-						</ul>-->
-					</div>
 
-					<div class="row"></div>
+								<div class="search-container">
+									<input type="text" >
+									<i class="fa fa-search"></i>
+								</div>
+
+								<ul class="sidebar-nav">
+									<li ><a href="" class="main-stack active">
+										<i class="fa fa-users"></i> Administração de sistema</a>
+										<ul>
+											<li><i class="fa fa-minus-square"></i><a href="#">Atualização</a>
+												<ul>
+													<li><i class="fa fa-plus-square"></i><a href="#">Cadastro de ações</a></li>
+													<li><i class="fa fa-minus-square"></i><a href="#">Consultas</a>
+														<ul>
+															<li><a href="#">Cadastro de ações</a></li>
+															<li><i class="fa fa-exclamation-triangle"></i><a href="#">Consulta de fabricantes</a></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li><i class="fa fa-plus-square"></i><a href="#">Cadastro</a></li>
+											<li><i class="fa fa-plus-square"></i><a href="#">Gerencia</a></li>
+										</ul>
+									</li>
+									<li><a href="#" class="main-stack tooltip-demo"><i class="fa fa-file" data-toggle="tooltip" title="Hooray!"></i> Cadastro</a></li>
+									<li><a href="" class="main-stack"><i class="fa fa-usd"></i> Caixa</a></li>
+									<li><a href="" class="main-stack"><i class="fa fa-shopping-cart"></i> Compras</a></li>
+									<li><a href="" class="main-stack"><i class="fa fa-building"></i> Entreposto</a></li>
+								</ul>
+								<!--<ul>
+									<li>Administração de sistema</li>
+									<li>Cadastro de fabricante</li>
+									<li>Cotação fornecedor</li>
+									<li>Cadastro de departamento</li>
+								</ul>-->
+							</div>
+
+							<div class="col">
+								<a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+							</div>
+						</div>
+					</section>
 				</aside>
 				
-				<aside class="col-aside-2">
-					<div class="row board">
-						<h4>Hierarquia de Funções</h4>				
-					</div>
+				<aside class="row-aside-2">
+					<section class="section-1" id="col_2">
+						<div class="scroll">
 
-					<label class="label-100">
-						Departamento
-						<select>
-							<option>Todos</option>
-						</select>
-					</label>
+							<a href="javascript:;" class="fa fa-bars close-pine-2" onclick="click_aside('2')"></a>
+							
+							<div class="row row-2 board">
+								<h4>Hierarquia de Funções</h4>				
+							</div>
 
-					<label class="label-100">
-						Cargo
-						<select>
-							<option>Todos</option>
-						</select>
-					</label>
+							<label class="label-100">
+								Departamento
+								<select>
+									<option>Todos</option>
+								</select>
+							</label>
 
-					<label class="label-100">
-						Funcionário
-						<select>
-							<option>Selecione</option>
-						</select>
-					</label>
+							<label class="label-100">
+								Cargo
+								<select>
+									<option>Todos</option>
+								</select>
+							</label>
 
-					<button class="btn btn-success">Carregar dados (*)</button>
+							<label class="label-100">
+								Funcionário
+								<select>
+									<option>Selecione</option>
+								</select>
+							</label>
+
+							<button class="btn btn-success width-size">Carregar dados (*)</button>
+						</div>
+					</section>
+
+					<section class="section-2">
+						<div class="scroll">
+							<h5>Geral</h5>		
+							<fieldset>
+								<p class="txt-title">Código:<strong>4</strong></p>
+								
+								<button class="btn btn-primary btn-auditoria">Auditoria</button>
+								
+								<label class="calc-100-95">
+									Descrição:
+									<input type="text" placeholder="Gerente Departamento">
+								</label>
+
+								<label class="width-90">
+									CBO:
+									<input type="text" placeholder="0000004">
+								</label>
+
+								<label class="calc-100-115">
+									Departamento:							
+									<select>
+										<option>
+											Selecione
+										</option>
+									</select>							
+								</label>
+
+								<label class="width-110">
+									<button class="btn btn-success btn-add">
+										<i class="fa fa-plus-circle "></i>
+										Adicionar
+									</button>
+								</label>
+
+								<table class="striped condensed">
+									<thead>
+										<tr>
+											<th>Departamento</th>
+											<th>Gestor</th>
+											<th>Excluir</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>T.I</td>
+											<td><input type="checkbox"></td>
+											<td><i class="fa fa-times-circle"></i></td>
+										</tr>									
+									</tbody>
+								</table>
+
+							</fieldset>
+
+							<h5>Funcionário</h5>		
+							<fieldset>
+
+								<table  class="striped condensed">
+									<thead>
+										<tr>
+											<th>
+												<select>
+													<option>Selecione</option>
+												</select>
+											</th>
+											<th>
+												<select>
+													<option>Selecione</option>
+												</select>
+											</th>
+											<th>
+												<select>
+													<option>Selecione</option>
+												</select>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>José da Silva Maria</td>
+											<td>T.I</td>
+											<td>Tucuruvi</td>
+										</tr>
+										<tr>
+											<td>Kleber</td>
+											<td>Compras</td>
+											<td>Tucuruvi</td>
+										</tr>
+										<tr>
+											<td>Patrick</td>
+											<td>R.H</td>
+											<td>Tucuruvi</td>
+										</tr>
+										<tr>
+											<td>Rogerio</td>
+											<td>Financeiro</td>
+											<td>Tucuruvi</td>
+										</tr>
+									</tbody>
+								</table>
+
+							</fieldset>
+
+							<div class="group-buttons">
+								<button class="btn btn-default"><i class="fa fa-question-circle"></i>Ajudar</button>
+								<button class="btn btn-success"><i class="fa fa-check-circle"></i>Salvar</button>
+								<button class="btn btn-danger"><i class="fa fa-times-circle"></i>Fechar</button>
+							</div>
+						</div>
+					</section>	
 				</aside>
 
-				<aside class="col-aside-3">
-					<h5>Geral</h5>		
-					<fieldset>
-						<p class="txt-title">Código:<strong>4</strong></p>
-						
-						<button class="btn btn-primary btn-auditoria">Auditoria</button>
-						
-						<label class="calc-100-95">
-							Descrição:
-							<input type="text" placeholder="Gerente Departamento">
-						</label>
+				<!--<aside class="row-aside-3">
+					<div class="scroll">
+						<h5>Geral</h5>		
+						<fieldset>
+							<p class="txt-title">Código:<strong>4</strong></p>
+							
+							<button class="btn btn-primary btn-auditoria">Auditoria</button>
+							
+							<label class="calc-100-95">
+								Descrição:
+								<input type="text" placeholder="Gerente Departamento">
+							</label>
 
-						<label class="width-90">
-							CBO:
-							<input type="text" placeholder="0000004">
-						</label>
+							<label class="width-90">
+								CBO:
+								<input type="text" placeholder="0000004">
+							</label>
 
-						<label class="calc-100-115">
-							Departamento:							
-							<select>
-								<option>
-									Selecione
-								</option>
-							</select>							
-						</label>
+							<label class="calc-100-115">
+								Departamento:							
+								<select>
+									<option>
+										Selecione
+									</option>
+								</select>							
+							</label>
 
-						<label class="width-110">
-							<button class="btn btn-success btn-add">
-								<i class="fa fa-plus-circle "></i>
-								Adicionar
-							</button>
-						</label>
+							<label class="width-110">
+								<button class="btn btn-success btn-add">
+									<i class="fa fa-plus-circle "></i>
+									Adicionar
+								</button>
+							</label>
 
-						<table class="striped condensed">
-							<thead>
-								<tr>
-									<th>Departamento</th>
-									<th>Gestor</th>
-									<th>Excluir</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>T.I</td>
-									<td><input type="checkbox"></td>
-									<td><i class="fa fa-times-circle"></i></td>
-								</tr>
-							</tbody>
-						</table>
+							<table class="striped condensed">
+								<thead>
+									<tr>
+										<th>Departamento</th>
+										<th>Gestor</th>
+										<th>Excluir</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>T.I</td>
+										<td><input type="checkbox"></td>
+										<td><i class="fa fa-times-circle"></i></td>
+									</tr>									
+								</tbody>
+							</table>
 
-					</fieldset>
+						</fieldset>
 
-					<h5>Funcionário</h5>		
-					<fieldset>
+						<h5>Funcionário</h5>		
+						<fieldset>
 
-						<table  class="striped condensed">
-							<thead>
-								<tr>
-									<th>
-										<select>
-											<option>Selecione</option>
-										</select>
-									</th>
-									<th>
-										<select>
-											<option>Selecione</option>
-										</select>
-									</th>
-									<th>
-										<select>
-											<option>Selecione</option>
-										</select>
-									</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>José da Silva Maria</td>
-									<td>T.I</td>
-									<td>Tucuruvi</td>
-								</tr>
-							</tbody>
-						</table>
+							<table  class="striped condensed">
+								<thead>
+									<tr>
+										<th>
+											<select>
+												<option>Selecione</option>
+											</select>
+										</th>
+										<th>
+											<select>
+												<option>Selecione</option>
+											</select>
+										</th>
+										<th>
+											<select>
+												<option>Selecione</option>
+											</select>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>José da Silva Maria</td>
+										<td>T.I</td>
+										<td>Tucuruvi</td>
+									</tr>
+									<tr>
+										<td>Kleber</td>
+										<td>Compras</td>
+										<td>Tucuruvi</td>
+									</tr>
+									<tr>
+										<td>Patrick</td>
+										<td>R.H</td>
+										<td>Tucuruvi</td>
+									</tr>
+									<tr>
+										<td>Rogerio</td>
+										<td>Financeiro</td>
+										<td>Tucuruvi</td>
+									</tr>
+								</tbody>
+							</table>
 
-					</fieldset>
+						</fieldset>
 
-					<div class="group-buttons">
-						<button class="btn btn-default"><i class="fa fa-question-circle"></i>Ajudar</button>
-						<button class="btn btn-success"><i class="fa fa-check-circle"></i>Salvar</button>
-						<button class="btn btn-danger"><i class="fa fa-times-circle"></i>Fechar</button>
+						<div class="group-buttons">
+							<button class="btn btn-default"><i class="fa fa-question-circle"></i>Ajudar</button>
+							<button class="btn btn-success"><i class="fa fa-check-circle"></i>Salvar</button>
+							<button class="btn btn-danger"><i class="fa fa-times-circle"></i>Fechar</button>
+						</div>
 					</div>
-				</aside>
+				</aside>-->
 			</section>
 
 			<footer></footer>
 		</div>
 
 		<script src="scripts/jquery.min.js"></script>
+		<script src="scripts/enscroll-0.6.1.min.js"></script>
+
+		<script src="scripts/bootstrap-modal.js"></script>
+		<script src="scripts/bootstrap-tooltip.js"></script>
+
+		<script src="scripts/main.min.js"></script>
 		<script src="http://localhost:35735/livereload.js"></script>
 	</body>
 </html>

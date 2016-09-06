@@ -1,27 +1,35 @@
-$(function() {if (window.PIE) { $('*').each(function() { PIE.attach(this); }); }})
+$(function() {
+	if (window.PIE) { $('*').each(function() { PIE.attach(this); }); }
+	$('.scroll').enscroll();
 
+	$('#myModal').modal('toggle');
+	$('[data-toggle="tooltip"]').tooltip();
+})
 
-( function ( document, window, index ){
-	var inputs = document.querySelectorAll( '.inputfile' );
-	Array.prototype.forEach.call( inputs, function( input ){
-	var label	 = input.nextElementSibling,
-	labelVal = label.innerHTML;
+function click_aside(val){
 
-	input.addEventListener( 'change', function( e ){
-		var fileName = '';
-		if( this.files && this.files.length > 1 )
-			fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
-		else
-			fileName = e.target.value.split( '\\' ).pop();
+	var section = $('#col_'+val);
+	var aside = $('.row-aside-'+val);
+	
+	if(section.attr('class') == 'aside-closed' || section.attr('class') == 'section-1 aside-closed'){
+		
+			if(val == 2){
+				$('.section-1').removeClass('aside-closed');
+				$('.section-2').attr('style','width: calc(100% - 210px)');
+			}else{
+				section.removeClass('aside-closed');
+				aside.removeClass('aside-closed');
+			}
+		
+	}else{
+			if(val == 2){
+				$('.section-1').addClass('aside-closed');
+				$('.section-2').attr('style','width: calc(100% - 30px)');
+			}else{
+				section.addClass('aside-closed');
+				aside.addClass('aside-closed');	
+			}	
+		
+	}
+}
 
-		if( fileName )
-			label.querySelector( 'span' ).innerHTML = fileName;
-		else
-			label.innerHTML = labelVal;
-	});
-
-	// Firefox bug fix
-	input.addEventListener( 'focus', function(){ input.classList.add( 'has-focus' ); });
-	input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
-});
-}( document, window, 0 ));
